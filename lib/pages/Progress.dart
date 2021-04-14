@@ -54,10 +54,11 @@ List createWeeks(List<Map<String, dynamic>?> snap) {
   int daysNumber = lastDay.difference(firstDay).inDays;
 
   int firstWeekLong = 8 - firstDay.weekday;
-  double weeksNumber = (daysNumber - firstWeekLong) / 7;
-  int lastWeekLong =
-      (daysNumber - ((weeksNumber.toInt() * 7) + firstWeekLong)) + 1;
+  double weeksNumberDouble = (daysNumber - firstWeekLong) / 7;
+  int weeksNumber = weeksNumberDouble.toInt();
+  int lastWeekLong = (daysNumber - ((weeksNumber * 7) + firstWeekLong)) + 1;
 
+  print("Start");
   print(firstWeekLong.toString());
   print(weeksNumber.toString());
   print(lastWeekLong.toString());
@@ -138,7 +139,7 @@ List createWeeks(List<Map<String, dynamic>?> snap) {
       if (i - 1 < lastDay.weekday == false)
         slaveList.add(DayData(weekdays[i - 1], 0, 0, 0, 0, 0));
       else {
-        int day = (lastDay.weekday - lastWeekLong) + i - 1;
+        int day = lastDay.weekday - i;
         print(lastDay.subtract(Duration(days: day)).day);
         if (snap
                 .where((element) =>
