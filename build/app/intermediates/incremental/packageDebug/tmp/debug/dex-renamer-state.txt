@@ -1,0 +1,4 @@
+#Sat Mar 27 21:25:35 CET 2021
+base.0=C\:\\Users\\kayod\\Desktop\\Flutter\\Kdmedia\\leadsadmin\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
