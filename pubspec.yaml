@@ -1,48 +1,25 @@
 name: leadsadmin
-publish_to: 'none' 
+publish_to: "none"
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+          sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
-  flutter:
-    sdk: flutter
-  cupertino_icons: ^1.0.2
+          flutter:
+                    sdk: flutter
+          ansicolor: ^2.0.1
+          cloud_firestore: ^1.0.3
+          file_picker: ^3.0.0
+          firebase_core: ^1.0.2
+          get: ^4.1.1
+          syncfusion_flutter_charts: ^19.1.55+1
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
+          flutter_test:
+                    sdk: flutter
 
-
-flutter:  
-  uses-material-design: true
-
-
-
-
-  
-  
-
-  
-  
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+flutter:
+          uses-material-design: true
+          assets:
+                    - logo.png
